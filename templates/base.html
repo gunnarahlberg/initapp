@@ -3,11 +3,10 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Shop | {{ title|default:"Welcome" }}</title>
-{{ USE_B }}
-    {% if USE_B == 'A' %}
+    <title>Inititivet | {{ title|default:"Welcome" }}</title>
+    {% if USE_CDN == None %}
         {% load static %}
-        <link rel="stylesheet" href="{% static "/shop/dist/assets/css/app.css" %}">
+        <link rel="stylesheet" href="{% static "/initapp/dist/assets/css/app.css" %}">
     {% else %}
         <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
     {% endif %}

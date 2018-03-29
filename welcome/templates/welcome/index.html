@@ -1,3 +1,14 @@
-<html>
-<h1>Welcome </h1>
+
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Welcome </h1>      
+
+<form>
+    <label>User Name<input type="text"/></label>
+    <label>Password<input type="text"/></label>
+
+</form>
 </html>
+
+{% endblock %}
