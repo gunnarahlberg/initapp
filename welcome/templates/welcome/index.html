@@ -2,13 +2,97 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>Welcome </h1>      
 
+<div class="callout large primary">
+<div class="text-center">
+<h1>Bli initiativtagare!</h1>
+<h2 class="subheader"> Bli medlem så får du mer information om hur du kan engagera dig!</h2>
+</div>
+</div>
+<article class="grid-container">
+<div class="grid-x align-center">
+<div class="cell medium-8">
+<div class="blog-post">
+<h3>Var med och forma framtiden</h3>
+<p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
 <form>
-    <label>User Name<input type="text"/></label>
-    <label>Password<input type="text"/></label>
+    <div class="grid-x grid-padding-x">
+        <div class="large-12 cell">
+<label>För- och efternamn<input type="text"></label>
+        </div>
+    </div>
+    <div class="grid-x grid-padding-x">
+        <div class="large-12 cell">
+            <label>E-post<input type="text" aria-describedby="emailHelpText"></label>
+            <p class="help-text" id="emailHelpText">E-Post address där vi kan nå dig. Vi skickar aldrig skräppost eller spam.</p>
+        </div>
+    </div>
+    <div class="grid-x grid-padding-x">
+        <div class="large-12 cell">
+<label>Postnummer<input type="text"></label>
+        </div>
+    </div>
+    <div class="grid-x grid-padding-x">
+        <div class="large-12 cell">
+<label>Bostadsort<input type="text"></label>
+        </div>
+    </div>
+    <div class="grid-x grid-padding-x">
+        <div class="large-12 cell">
+<label>Telefon<input type="text"></label>
+        </div>
+    </div>
+    <div class="grid-x grid-padding-x">
+        <div class="large-12 cell">
+<label>Födelsedatum (ÅÅÅÅ-MM-DD)<input type="text"></label>
+        </div>
+    </div>
+    <div class="grid-x grid-padding-x">
+        <div class="large-12 cell">
 
-</form>
+<input id="checkbox1" type="checkbox"><label for="checkbox1">Jag godkänner att mina uppgifter registreras</label>
+        </div>
+    </div>
+    <div class="grid-x grid-padding-x">
+        <div class="large-12 cell">
+
+            <a class="button" href="#">Klicka och bli medlem kostnadsfritt!</A>
+        </div>
+    </div>
+    </form>
+<div class="callout">
+<ul class="menu simple">
+<li><a href="#">Author: &lt;TODO&gt;</a></li>
+<li><a href="#">Comments: &lt;TODO&gt;</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="grid-x align-center">
+<div class="cell medium-8">
+<div class="blog-post">
+<h3>Awesome blog post title <small>3/6/2016</small></h3>
+<img class="thumbnail" src="https://placehold.it/850x350">
+<p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
+<div class="callout">
+<ul class="menu simple">
+<li><a href="#">Author: Mike Mikers</a></li>
+<li><a href="#">Comments: 3</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</article>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.js"></script>
+<script>
+      $(document).foundation();
+    </script>
+</body>
 </html>
+
 
 {% endblock %}
